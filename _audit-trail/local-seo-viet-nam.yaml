@@ -1,0 +1,104 @@
+# Article Audit Trail — Vietnam AI Law Thông tư 18/2027 Compliance
+# Schema: _master/schemas/article-audit-trail.yaml v1.0
+# Article: Local SEO Việt Nam 2026
+
+article_audit_trail:
+  identity:
+    article_id: local-seo-viet-nam
+    client_slug: hayweb
+    title: "Local SEO Việt Nam: Map Pack + AI local pack thay đổi 2026"
+    url_canonical: "https://hoc.hayweb.vn/bai-viet/local-seo-viet-nam"
+    date_published: "2026-05-25"
+    date_modified: ""
+    tier_classification: tier-2-commercial
+    sensitive_vertical: false
+    sensitive_vertical_type: ""
+    word_count: 980
+    primary_keyword: "Local SEO Việt Nam"
+    primary_keyword_volume: 2400
+
+  ai_involvement:
+    ai_used: true
+    estimated_percentage: 35
+    disclosure_label_present: true
+    disclosure_prominence: end-of-article
+    disclosure_text_verbatim: >-
+      Bài viết này được hỗ trợ bởi AI tools (Claude Opus 4.7, Ollama Qwen 32B)
+      ở mức 30-40%. Mức human review: 100%. Tuân thủ Thông tư 18/2027 BTTTT.
+    carve_out_qualifies: false
+    carve_out_rationale: ""
+    phase_involvement:
+      phase_1_5_analysis_pct: 0
+      phase_1_8_synthesis_pct: 0
+      article_outline_pct: 40
+      first_draft_writing_pct: 50
+      editing_pct: 10
+      schema_generation_pct: 80
+      image_alt_text_pct: 60
+
+  tools_used:
+    primary_ai_tool: claude-opus-4-7
+    primary_ai_tool_version: claude-opus-4-7-20260119
+    secondary_tools:
+      - ollama-qwen-32b-q4
+    api_provider: hybrid
+    api_retention_status: anthropic-console-30-day
+    api_conversation_id_anthropic: ""
+
+  prompt_samples:
+    - phase: outline
+      prompt_excerpt: >-
+        Outline Local SEO Việt Nam. Per-vertical strategy (F&B / Spa / Medical / Legal / Real Estate).
+        Case study Whitespark 47-expert + Search Atlas 7718 businesses (proximity ~55%).
+      response_summary: "Outline 5 sections + per-vertical table + Whitespark+Search Atlas convergence story"
+      human_review_applied: true
+      timestamp: "2026-05-19T19:48:00+07:00"
+    - phase: draft
+      prompt_excerpt: >-
+        Expand. Highlight 0.2pp convergence between Whitespark survey + Search Atlas XGBoost.
+        Vietnam mobile 75%+, 72% within 8km. District landing pages strategy.
+      response_summary: "980 words, convergence story applied, VN-specific 72%/75% stats"
+      human_review_applied: true
+      timestamp: "2026-05-19T19:50:00+07:00"
+
+  human_review:
+    writer_id: "than-day-38"
+    writer_review_date: "2026-05-19"
+    writer_review_notes: "STRONGEST empirical validation A.8.5 Q15 — Whitespark + Search Atlas 0.2pp convergence safe to cite directly"
+    editor_id: PENDING
+    editor_review_date: ""
+    editor_flag_status: ""
+    editor_notes: ""
+    ship_decision_rationale: ""
+    third_layer_review_required: false
+    third_layer_reviewer_id: ""
+    third_layer_review_date: ""
+    third_layer_spot_check_claims: []
+    client_publish_approval_email: ""
+
+  source_verification:
+    claims_verified:
+      - claim: "Whitespark 47-expert survey proximity ~55% Map Pack weight"
+        url_primary: "https://whitespark.ca/blog/local-search-ranking-factors/"
+        retrieved: "2026-05-19"
+        methodology: "Annual Local Search Ranking Factors Survey, 47 industry experts ranked"
+        q3_score: 4.0
+        label: external-whitespark-n-47
+      - claim: "Search Atlas XGBoost 7718 businesses 55.2% proximity"
+        url_primary: "https://searchatlas.com/blog/local-seo-ranking-factors-study/"
+        retrieved: "2026-05-19"
+        methodology: "XGBoost ML model on 7,718 business records"
+        q3_score: 4.0
+        label: external-search-atlas-n-7718
+      - claim: "Vietnam 72% consumers within 8km, 75%+ mobile traffic"
+        url_primary: "https://www.brightlocal.com/research/local-consumer-review-survey/"
+        retrieved: "2026-05-19"
+        methodology: "BrightLocal LCRS 2026 n=1002 + Vietnam-specific subset"
+        q3_score: 3.0
+        label: external-brightlocal-vn-subset
+        note: "VN-specific 72% within 8km — broader consumer survey aggregation; refresh quarterly"
+
+  retention:
+    storage_location: "supabase://hayweb-audit-trail/hoc.hayweb.vn/local-seo-viet-nam"
+    expiry_date: "2029-05-25"
+    retention_years: 3

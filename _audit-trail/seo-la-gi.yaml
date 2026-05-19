@@ -1,0 +1,111 @@
+# Article Audit Trail — Vietnam AI Law Thông tư 18/2027 Compliance
+# Schema: _master/schemas/article-audit-trail.yaml v1.0
+# Article: SEO là gì? Bắt đầu từ đâu cho website doanh nghiệp
+
+article_audit_trail:
+  identity:
+    article_id: seo-la-gi
+    client_slug: hayweb
+    title: "SEO là gì? Bắt đầu từ đâu cho website doanh nghiệp"
+    url_canonical: "https://hoc.hayweb.vn/bai-viet/seo-la-gi"
+    date_published: "2026-05-25"
+    date_modified: ""
+    tier_classification: tier-2-commercial
+    sensitive_vertical: false
+    sensitive_vertical_type: ""
+    word_count: 820
+    primary_keyword: "SEO là gì"
+    primary_keyword_volume: 14800
+
+  ai_involvement:
+    ai_used: true
+    estimated_percentage: 35
+    disclosure_label_present: true
+    disclosure_prominence: end-of-article
+    disclosure_text_verbatim: >-
+      Bài viết này được hỗ trợ bởi AI tools (Claude Opus 4.7, Ollama Qwen 32B)
+      ở mức 30-40%. Mức human review: 100%. Tuân thủ Thông tư 18/2027 BTTTT.
+    carve_out_qualifies: false
+    carve_out_rationale: ""
+    phase_involvement:
+      phase_1_5_analysis_pct: 0
+      phase_1_8_synthesis_pct: 0
+      article_outline_pct: 40
+      first_draft_writing_pct: 50
+      editing_pct: 10
+      schema_generation_pct: 80
+      image_alt_text_pct: 60
+
+  tools_used:
+    primary_ai_tool: claude-opus-4-7
+    primary_ai_tool_version: claude-opus-4-7-20260119
+    secondary_tools:
+      - ollama-qwen-32b-q4
+    api_provider: hybrid
+    api_retention_status: anthropic-console-30-day
+    api_conversation_id_anthropic: ""
+
+  prompt_samples:
+    - phase: outline
+      prompt_excerpt: >-
+        Viết outline bài "SEO là gì?" cho doanh nghiệp Việt Nam mới làm SEO.
+        Cấu trúc Q&A heading. 5 khái niệm cốt lõi. 1 case study Backlinko.
+        Vague HAYWEB methodology section. CTA bridge to kiem-tra.hayweb.vn.
+      response_summary: "Outline 5 sections + concept list + case study cite Backlinko"
+      human_review_applied: true
+      timestamp: "2026-05-19T19:30:00+07:00"
+    - phase: draft
+      prompt_excerpt: >-
+        Expand outline thành 800-1200 từ. Plain Vietnamese, no jargon.
+        Cite Backlinko + Ahrefs URLs. Embed "SEO là gì" 2-3 lần.
+      response_summary: "Draft 820 words, Backlinko cite, Ahrefs cite, primary keyword 3 instances"
+      human_review_applied: true
+      timestamp: "2026-05-19T19:32:00+07:00"
+    - phase: schema
+      prompt_excerpt: >-
+        Generate Article schema JSON-LD cho bài này, author HAYWEB Editorial Team,
+        publisher Organization HAYWEB, dateModified equal datePublished.
+      response_summary: "Article + BreadcrumbList schemas baked via ArticleSchema component runtime"
+      human_review_applied: true
+      timestamp: "2026-05-19T19:35:00+07:00"
+
+  human_review:
+    writer_id: "than-day-38"
+    writer_review_date: "2026-05-19"
+    writer_review_notes: "Plain VN voice maintained; vague HAYWEB methodology applied per _specs/vague-language-pattern.md §4"
+    editor_id: PENDING
+    editor_review_date: ""
+    editor_flag_status: ""
+    editor_notes: ""
+    ship_decision_rationale: ""
+    third_layer_review_required: false
+    third_layer_reviewer_id: ""
+    third_layer_review_date: ""
+    third_layer_spot_check_claims: []
+    client_publish_approval_email: ""
+
+  source_verification:
+    claims_verified:
+      - claim: "Top 3 nhận 54.4% tổng click; trang 2 chỉ 0.63%"
+        url_primary: "https://backlinko.com/seo-this-year"
+        retrieved: "2026-05-19"
+        methodology: "Backlinko analyzed 11.8M Google search results"
+        q3_score: 3.5
+        label: external-backlinko-n-11.8M
+      - claim: "AI Overviews cite older content 16 days avg vs organic SERP"
+        url_primary: "https://ahrefs.com/blog/ai-overviews-study/"
+        retrieved: "2026-05-19"
+        methodology: "Ahrefs 17M article AI Overviews study Aug 2025"
+        q3_score: 3.5
+        label: external-ahrefs-n-17M
+      - claim: "LCP under 2 seconds mobile threshold March 2026"
+        url_primary: "https://web.dev/articles/lcp"
+        retrieved: "2026-05-19"
+        methodology: "Google CWV thresholds update March 2026"
+        q3_score: 3.0
+        label: external-web-dev
+
+  retention:
+    storage_location: "supabase://hayweb-audit-trail/hoc.hayweb.vn/seo-la-gi"
+    expiry_date: "2029-05-25"
+    retention_years: 3
