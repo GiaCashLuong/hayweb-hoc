@@ -1,10 +1,11 @@
 // AI disclosure block — Thông tư 18/2027 BTTTT compliance.
 // Hiện hữu visible per article, đúng yêu cầu prominent label.
+// S5B 2026-05-20: border-accent → border-navy (HAYWEB family signal; AI tools = trust/authority navy)
 export default function AIDisclosure({ disclosure }) {
   const { involvementPercentage, tools, humanReview } = disclosure;
   return (
     <aside
-      className="my-10 p-5 md:p-6 border-l-4 border-accent bg-bone rounded-r-md"
+      className="my-10 p-5 md:p-6 border-l-4 border-navy bg-bone rounded-r-md"
       aria-label="Minh bạch sử dụng AI"
     >
       <h3 className="!mt-0 !mb-2 text-base font-medium text-ink">
@@ -20,7 +21,7 @@ export default function AIDisclosure({ disclosure }) {
         Tuân thủ Thông tư 18/2027 BTTTT về minh bạch nội dung AI. Chi tiết tại{' '}
         <a
           href="https://hayweb.vn/minh-bach-ai"
-          className="text-accent border-b border-rule hover:border-accent"
+          className="text-gold-deep border-b border-rule hover:border-gold-deep hover:text-gold-deep transition-colors"
         >
           trang minh bạch AI HAYWEB
         </a>

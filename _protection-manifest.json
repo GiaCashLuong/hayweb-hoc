@@ -1,0 +1,19 @@
+{
+  "project_id": "hwp-2026-06-hayweb-hoc-0c8541",
+  "client_slug": "hayweb-hoc",
+  "fingerprint": "0c8541ba71796c490dbb4c463f6feaa271e3646224414b1e86fe10f807d16d3c",
+  "timestamp": "2026-06-07T02:58:41.356Z",
+  "session_scope": "L2.1+L2.2+L2.3+L2.4",
+  "session_version": "v1.2-session-3",
+  "layers": {
+    "L2.1_visible":   "INJECTED",
+    "L2.2_semi":      "INJECTED",
+    "L2.3_stego":     "INJECTED",
+    "L2.4_crypto":    "INJECTED"
+  },
+  "verification": {
+    "original_size_kb": 4546,
+    "current_size_kb": 4546,
+    "verified_at": "2026-06-07T02:59:37Z"
+  }
+}

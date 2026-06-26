@@ -35,11 +35,10 @@ export default function SiteFooter() {
               </a>
             </li>
             <li>
+              {/* S5B-ext same-tab nav per Điện Hạ Day 39 night */}
               <a
                 href="https://kiem-tra.hayweb.vn"
                 className="hover:text-ink"
-                target="_blank"
-                rel="noopener"
               >
                 Đo website miễn phí
               </a>

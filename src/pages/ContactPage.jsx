@@ -13,10 +13,9 @@ export default function ContactPage() {
           Trước khi tư vấn, đo website của bạn trên 7 chỉ tiêu kỹ thuật cơ bản.
           Chỉ cần URL — không cần đăng ký.
         </p>
+        {/* S5B-ext same-tab nav per Điện Hạ Day 39 night */}
         <a
           href="https://kiem-tra.hayweb.vn"
-          target="_blank"
-          rel="noopener"
           className="btn-primary"
         >
           So sánh website ngay →

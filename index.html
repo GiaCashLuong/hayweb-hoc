@@ -5,6 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#fafaf7" />
+    <link rel="preconnect" href="https://hayweb.vn" crossorigin />
+
+    <!-- Day 50+3 perf fix: route-aware hero image preload (article pages) — port Day 39 S5C from mockup-A.
+         Runs sync before React, kick-starts image fetch in parallel with JS bundle download.
+         Target: LCP article pages ≤2.0s mobile. -->
+    <script>
+      (function () {
+        var m = location.pathname.match(/\/bai-viet\/([\w-]+)/);
+        if (!m) return;
+        var l = document.createElement('link');
+        l.rel = 'preload';
+        l.as = 'image';
+        l.href = '/images/articles/' + m[1] + '-hero.webp';
+        l.fetchPriority = 'high';
+        document.head.appendChild(l);
+      })();
+    </script>
     <meta name="description" content="HAYWEB Học — Blog học SEO + AEO + GEO + Content + Bảo mật website chuẩn 2026 cho doanh nghiệp Việt Nam." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://hoc.hayweb.vn/" />

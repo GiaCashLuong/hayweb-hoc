@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import BrandBar from './components/BrandBar.jsx';
 import SiteHeader from './components/SiteHeader.jsx';
 import SiteFooter from './components/SiteFooter.jsx';
 import HomePage from './pages/HomePage.jsx';
@@ -10,6 +11,7 @@ import NotFoundPage from './pages/NotFoundPage.jsx';
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
+      <BrandBar current="hoc" />
       <SiteHeader />
       <main className="flex-1">
         <Routes>

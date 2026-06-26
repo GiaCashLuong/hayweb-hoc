@@ -21,9 +21,11 @@ export default function ArticleContent() {
         ưu tiên cite nội dung có authority signals rõ ràng.
       </p>
       <p>
-        Tại Việt Nam, Thông tư 18/2027 BTTTT có hiệu lực tháng 12/2027 yêu cầu
-        nội dung có hỗ trợ AI phải có nhãn minh bạch — bao gồm tỷ lệ AI, công
-        cụ sử dụng, mức độ human review. Lưu trữ audit trail tối thiểu 3 năm.
+        Tại Việt Nam, hướng dẫn của BTTTT về trách nhiệm minh bạch nội dung AI
+        (theo lộ trình triển khai 2027) yêu cầu nội dung có hỗ trợ AI phải có
+        nhãn minh bạch — bao gồm tỷ lệ AI, công cụ sử dụng, mức độ human
+        review. Lưu trữ audit trail nhiều năm (chi tiết kỳ hạn cụ thể theo văn
+        bản chính thức khi ban hành).
         Doanh nghiệp Việt Nam triển khai sớm vừa tuân thủ pháp luật, vừa tạo
         differentiator tin cậy với khách hàng.
       </p>

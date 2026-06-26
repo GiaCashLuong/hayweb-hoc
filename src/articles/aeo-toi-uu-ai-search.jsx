@@ -113,9 +113,10 @@ export default function ArticleAEO() {
           được cite.
         </li>
         <li>
-          <strong>Perplexity</strong> — đang tăng trưởng nhanh (+370% YoY theo
-          industry reports). Live crawl + citation discipline khắt khe — nội
-          dung có URL nguồn rõ ràng có lợi thế.
+          <strong>Perplexity</strong> — đang tăng trưởng mạnh mẽ trong nhóm AI
+          search 2025-2026 (theo các aggregator traffic estimate). Live crawl +
+          citation discipline khắt khe — nội dung có URL nguồn rõ ràng có lợi
+          thế.
         </li>
       </ol>
 

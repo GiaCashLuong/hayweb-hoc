@@ -14,15 +14,14 @@ export default function HomePage() {
           chuẩn E-E-A-T và bảo mật website Mozilla 100/100.
         </p>
         <div className="mt-7 flex flex-wrap gap-4">
+          {/* S5B-ext 2026-05-20 Day 39 night: same-tab nav + funnel "Tư vấn" sang hayweb.vn/contact (parent service) */}
           <a
             href="https://kiem-tra.hayweb.vn"
-            target="_blank"
-            rel="noopener"
             className="btn-primary"
           >
             Đo website của bạn miễn phí
           </a>
-          <a href="/lien-he" className="btn-secondary">
+          <a href="https://hayweb.vn/contact" className="btn-secondary">
             Tư vấn 1-on-1 (30 phút)
           </a>
         </div>
